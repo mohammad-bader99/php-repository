@@ -1,0 +1,35 @@
+#logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-bar:hover{
+    opacity: .5;
+}
+
+
+#footer{
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.price-tag{
+    background-color: chartreuse;
+    color: #fff;
+    border-radius: 25px;
+    width: 5rem;
+    text-align: center;
+}
+
+
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    
+    
+  }

@@ -1,0 +1,20 @@
+#logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-bar:hover{
+    opacity: .5;
+}
+
+
+#footer{
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+#contact{
+    background-image: url(./assets/contact.avif);
+    color: black;
+}
