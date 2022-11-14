@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+<title>events demo</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<style>
+#menu{
+    width : 0;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: burlywood;
+    transition: 2s;
+}
+
+</style>
+
+
+<script>
+    let menuopen=false;
+function showmenu(){
+    if(menuopen){
+        document.getElementById('menu').style.width='0rem';
+        menuopen=false;
+    }else{
+        document.getElementById('menu').style.width='20rem';
+        menuopen=true;
+    }  
+}
+
+function change_color_red(){
+    document.getElementById('menu').style.backgroundColor='red';
+}
+
+function changecolor(element){
+    document.getElementById('menu').style.backgroundColor=element.value;
+}
+
+
+</script>
+
+<body>
+<div id="menu">
+</div>
+
+<div class="m-auto" style="width:20%">
+<button class="my-2" style="width:100%;" onclick="showmenu()">click me to show menu</button>
+<button class="my-2" style="width:100%;" onclick="change_color_red()">click me to change the menu color to red</button>
+<input  class="my-2"type="color" style="width:100%;" id="colorpicker" onchange="changecolor(this)">
+</div>
+
+
+</body>
+
+
+</html>
