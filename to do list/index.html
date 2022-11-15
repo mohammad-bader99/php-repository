@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>To Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+<header>
+    <div class="text-center bg-opacity-25 bg-warning my-3">
+        <h1>To Do List Page</h1>
+        <h3>Organize your list</h3>
+        <h3>Try It Now</h3>
+    </div>
+</header>
+
+<form id="container" class="d-flex justify-content-center my-5">
+    <div class="input-group d-flex justify-content-center" style="width: 50rem;">
+        <input  id="list" type="text" class="form-control" placeholder="add to the list">
+        <button id="btn" class="btn btn-success mx-1">Add</button>
+      </div>
+    </form>
+
+<div class="d-flex justify-content-center">
+    <table id="table" class="table" style="width: 70%;">
+            <tr>
+            <td style="width:20%;">Id</td>
+            <td style="width:80%;">List</td>
+            </tr>
+    </table>
+</div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js"
+integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+
+
+
+</html>
