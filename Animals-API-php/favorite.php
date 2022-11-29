@@ -26,4 +26,5 @@
     <?php endforeach ?>
       </div>
 
+      
  <?php require './footer.php';?>
