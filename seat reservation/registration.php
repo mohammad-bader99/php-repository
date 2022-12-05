@@ -5,7 +5,7 @@
 
 <div class="container"  style="margin-top:15%;">
     
-   <form class="m-auto w-50 border border-3 p-1" action="./creat_user.php" method="POST">
+   <form class="m-auto w-50 border border-3 p-1" action="./create_user.php" method="POST">
 
    <div class="mb-3 row">
     <label for="inputFirstName" class="col-sm-2 col-form-label">First Name:</label>
@@ -32,8 +32,10 @@
     </div>
   </div>
 
-    <div class="text-center">
+    <div class="text-center d-flex justify-content-between">
+        <a class="btn btn-primary" href="./index.php">Back</a>
         <input type="submit" class="btn btn-primary w-50 " value="Register">
+        
     </div>
 
 

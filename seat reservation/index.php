@@ -1,15 +1,17 @@
-
+<?PHP
+session_start();
+?>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
 
-<div class="container" action="" style="margin-top:30px;">
+<div class="container" style="margin-top:30px;">
 
 <div class="container m-auto">
     <p>admin@test.com<br>password:1234<br><br>test@test.com<br>password:1234</p>
 </div>
 
-   <form class="m-auto w-50 border border-3 p-1" action="" method="GET">
+   <form class="m-auto w-50 border border-3 p-1" action="./validation.php" method="POST">
 
    <div class="mb-3 row">
     <label for="inputEmail" class="col-sm-2 col-form-label">Email:</label>
@@ -31,5 +33,16 @@
     </div>
 
 </form>
+<?PHP if(isset($_SESSION['error_message'])):?>
 
+
+  <div class="alert alert-dark mt-5 w-50 text-center m-auto" role="alert">
+  <?= $_SESSION['error_message']; ?>
+
+  </div>
+
+
+<?PHP endif; 
+session_destroy();
+?>
 </div>
