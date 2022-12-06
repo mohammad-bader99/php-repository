@@ -7,6 +7,9 @@ if (!isset($_SESSION['user']))
     header('Location: index.php');
 }
 
+require './function.php';
+
+
 $user_info=$_SESSION['user'];
 $name=$user_info['role'].' : '.$user_info['first_name'].' '.$user_info['last_name'];
 
@@ -20,7 +23,7 @@ $name=$user_info['role'].' : '.$user_info['first_name'].' '.$user_info['last_nam
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./styles.css">
     <title>Seat Reservation</title>
 </head>
 <body>
@@ -42,7 +45,7 @@ $name=$user_info['role'].' : '.$user_info['first_name'].' '.$user_info['last_nam
         <?PHP if ($user_info['role']=="admin") :?>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">Create More seats</a>
+          <a class="nav-link active" aria-current="page" href="./create_seats_form.php">Create More seats</a>
         </li>
 
         <?php endif;?>

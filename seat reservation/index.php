@@ -8,7 +8,7 @@ session_start();
 <div class="container" style="margin-top:30px;">
 
 <div class="container m-auto">
-    <p>admin@test.com<br>password:1234<br><br>test@test.com<br>password:1234</p>
+    <p>admin@test.com<br>password:1234<br><br>test@test.com<br>password:1234<br><br>badu@mailinator.com<br>Pa$$w0rd!</p>
 </div>
 
    <form class="m-auto w-50 border border-3 p-1" action="./validation.php" method="POST">
